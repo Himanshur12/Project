@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Unique Elements</title>
+</head>
+<body>
+    <script>
+        var arr = [];
+        var size = prompt("Enter The Size :");
+        for (let i=0;i<size;i++)
+        {
+            arr[i] = parseInt( prompt("Enter Elements of Array"));
+        }
+        function mySet(arr) {
+            let res = Array.from(new Set(arr));
+            return res;
+        }
+        document.write("New Array Is : "+mySet(arr));
+    </script>         
+</body>
+</html>

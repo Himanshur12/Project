@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function mathfun(x,callback)
+        {
+            let y = callback;
+            document.write(x+y);
+        }
+        function add() {
+            return 3;
+        }
+        mathfun(2,add());
+    </script>         
+
+</body>
+</html>

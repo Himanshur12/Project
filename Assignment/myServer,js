@@ -1,0 +1,30 @@
+const http = require('http');
+var fs=require('fs');
+var e_method,e_url;
+var e_data;
+
+const hostname = '127.0.0.1';
+const port = 3000;
+
+const server = http.createServer((req, res) => {
+e_method = req.method;
+e_url = req.url;
+
+  if(e_method == 'POST') {
+    req.on('data', (chunk) => {
+    e_data = chunk.toString();
+    console.log(e_data);
+    fs.appendFile('hello.txt',e_url+" "+e_method+" "+e_data, function (err) 
+    {        
+       if (err) throw err;
+    });
+    });
+}
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hello, World!\n');
+});
+
+server.listen(port, hostname, () => {
+console.log(`Server running at http://${hostname}:${port}/`);
+});

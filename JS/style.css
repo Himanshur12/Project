@@ -1,0 +1,25 @@
+.box {
+    background-color:#f2f2e1;
+    height: 300px;
+    width: 300px;
+    color: red;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    border: 10px grey double;
+}
+body {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    background-color: black;
+}
+.logo {
+    height: 60px;
+    width: 250px;
+    background-image: url("logo.png");
+    background-repeat: no-repeat;
+}

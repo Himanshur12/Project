@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+var result = "";
+var arr1 = [];
+var arr2 = [];
+var size = prompt("Enter The Size Of Array :");
+
+for(let i=0;i<size;i++)
+{
+    arr1[i]=prompt("Enter String For Array 1 : ");
+}
+for(let i=0;i<size;i++)
+{
+    arr2[i]=prompt("Enter String For Array 2 : ");
+}
+arr1.forEach(myfunction);
+document.write(result);
+arr2.forEach(myfunctions);  
+document.write(results);
+function myfunction(value)
+     {
+        result = result + value + "<br>";
+     }
+function myfunctions(values)
+     {
+        results = results + values  + "<br>";
+     }
+
+</script>
+</body>
+</html>

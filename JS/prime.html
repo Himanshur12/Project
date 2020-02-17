@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+    var n = prompt("Enter A Series :");
+    var f=0;
+    for(let i=2;i<=n/2;i++)
+    {
+        if(n%i==0) 
+        {
+            f=1;
+            break;
+        }
+    }
+            if(n==1)
+            {
+                document.write("Neither Prime Nor Non-Prime");
+            }
+            else
+            {
+                if(f==0)
+            {
+                document.write("Prime No.");
+            }
+            else
+                document.write("Non-Prime");
+        }
+</script>
+</body>
+</html>

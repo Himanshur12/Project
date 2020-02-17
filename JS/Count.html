@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+var str = prompt("Enter the string :");
+var res = count(str);
+document.write("Maximum Character: "+ maxChar(str)+"<br>"+" Times: "+res);
+function maxChar(str) {
+const charMap = {};
+let max = 0;
+let maxChar = '';
+
+for(let char of str){
+    if(charMap[char]){
+        charMap[char]++;
+    }else{
+        charMap[char] = 1;
+    }
+}
+
+for(let char in charMap){
+    if(charMap[char] > max){
+        max = charMap[char];
+        maxChar = char;
+    }
+}
+return maxChar; 
+}
+
+      function count(str) 
+      {
+    let max = 0; 
+    let maxChars = []; 
+    const charCount = new Array(26).fill(0); 
+    for(let i = 0;i<str.length;i++){
+      const ch = str.charCodeAt(i)-97; 
+      charCount[ch]++;
+      if(charCount[ch]>max){
+        maxChars = [str.charAt(i)];
+        max = charCount[ch];
+      }else if(charCount[ch]===max)
+       maxChars.push(str.charAt(i));
+    }
+    console.log(maxChars.toString());    
+    return max;
+      }
+</script>
+</body>
+</html>

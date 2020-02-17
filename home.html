@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Form</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="view.js"></script>
+    </head>
+<body>
+    <div class="container-fluid">
+        <img class="logo" src="/home/himanshur/Desktop/MEAN/JS/logo.png" alt="log">
+    </div>
+    <div class="tab">
+    <table id="myTable"  style="border:2px solid orange;">
+        <tr>
+            <th>Id</th>
+            <th>Project</th>
+            <th>Submitted By</th>
+            <th>Operation</th>
+        </tr>
+       
+    <tr >
+    <td>1001</td>
+    <td>A1</td>
+    <td>Himanshu</td>
+    <td><button class="btn btn-success" type="button " onclick="edit()" value="Edit">Edit &nbsp;</button><button  type="button" onclick="viewfun()" class="btn btn-warning" value="Edit">View</button><button type="button" value="Edit" class="btn btn-danger">Delete</button></td>
+    </tr>
+    <tr>
+        <td>1002</td>
+        <td>A2</td>
+        <td>Ayush</td>
+        <td><button class="btn btn-success" type="button " value="Edit">Edit</button><button onclick="viewfun2()" type="button"  class="btn btn-warning" value="Edit">View</button><button type="button" value="Edit" class="btn btn-danger">Delete</button></td>
+        </tr>
+        <tr>
+            <td>1003</td>
+            <td>A3</td>
+            <td>Shivam</td>
+            <td><button class="btn btn-success" type="button " value="Edit">Edit</button><button onclick="viewfun3()" type="button" class="btn btn-warning" value="Edit">View</button><button type="button" value="Edit" class="btn btn-danger">Delete</button></td>
+            </tr>    
+    </table>    
+    </div>
+    
+    <footer>
+    <div class="container-fluid">
+        <span class="copy" ><h3>Output</span>
+    </div>
+</footer>
+<div class="container ">
+    <div class="col">
+    >>  <span id="info"> </span>
+    </div>
+    <div class="col">
+        <p id="info"> </p>
+    </div>
+    <div class="col">
+        <p id="info"> </p>
+    </div>
+</div>
+</body>
